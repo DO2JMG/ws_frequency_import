@@ -11,14 +11,14 @@ Vor ab muss das folgende Paket installiert werden :
 <b>Kopieren und Compilieren</b>
 
 <code>
-git clone https://github.com/DO2JMG/ws_frequency_import.git
-cd ws_frequency_import
-make
-
-cp fqimport /home/pi/ws/bin/
-cp dxlfqimport.sh /home/pi/ws/
-cp ws-import.conf /home/pi/ws/
-
+git clone https://github.com/DO2JMG/ws_frequency_import.git<br>
+cd ws_frequency_import<br>
+make<br>
+<br>
+cp fqimport /home/pi/ws/bin/<br>
+cp dxlfqimport.sh /home/pi/ws/<br>
+cp ws-import.conf /home/pi/ws/<br>
+<br>
 sudo chmod +x /home/pi/ws/dxlfqimport.sh
 </code>
 
@@ -29,9 +29,9 @@ sudo chmod +x /home/pi/ws/dxlfqimport.sh
 <b>Beispiel ws-import.conf</b>
 
 <code>
-latitude="52.1234"                          
-longitude="8.1234"
-range="300"                                     # Reichweite Kilometer (Radius)
-squelch="85"
+latitude="52.1234"<br>                          
+longitude="8.1234"<br>
+range="300"<br>                                     # Reichweite Kilometer (Radius)<br>
+squelch="85"<br>
 channelfile="/home/pi/ws/sdrcfg-rtl0.txt"
 </code>
