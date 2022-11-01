@@ -27,7 +27,7 @@ Vor ab muss das folgende Paket installiert werden :
 
 <b>Beispiel ws-import.conf</b>
 
-<code>latitude="52.1234"</code><br>                  
+<code>latitude="52.1234"</code>                
 <code>longitude="8.1234"</code><br>
 <code>range="300"                                     # Reichweite Kilometer (Radius)</code><br>
 <code>squelch="85"</code><br>
