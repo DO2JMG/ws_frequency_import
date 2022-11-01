@@ -12,13 +12,9 @@ source ${workingdir}/ws-import.conf
 piddir=${workingdir}/pidfiles
 bindir=${workingdir}/bin
 
-beaconfile=${workingdir}/beacon.txt
-commentfile=${workingdir}/comment.txt
-
 FQIMPORT=${bindir}/fqimport
 
 command -v ${FQIMPORT} >/dev/null 2>&1 || { echo "Ich vermisse " ${FQIMPORT} >&2; exit 1; }
-
 
 function startfqimport {
   echo "Starte Frequenzimport"
@@ -26,7 +22,6 @@ function startfqimport {
   fqimport_pid=$!
   echo $fqimport_pid > $PIDFILE
 }
-
 
 function sanitycheck {
 # check pidfiles in piddir
@@ -42,7 +37,6 @@ function sanitycheck {
   done
 }
 
-
 function checkproc {
 #checks if prog is running or not
   if [ -s $PIDFILE ];then ##have PIDFILE
@@ -56,7 +50,6 @@ function checkproc {
     return 1
   fi
 }
-
 
 tnow=`date "+%x_%X"`
 echo $tnow
@@ -78,7 +71,6 @@ PIDFILE=${piddir}/fqimport.pid
    : > ${LOGFILE}
    startfqimport
  fi
-
 
 exit 0
 
