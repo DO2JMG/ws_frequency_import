@@ -1,3 +1,12 @@
+/*
+
+ Frequency import for dxlAPRS
+ Copyright (C) Jean-Michael Grobel (DO2JMG) <info@wettersonde.net>
+
+ v0.1
+
+*/
+
 #include <iostream>
 #include <string>
 #include <curl/curl.h>
