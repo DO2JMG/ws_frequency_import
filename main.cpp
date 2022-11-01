@@ -260,7 +260,7 @@ int main(int argc, char** argv) {
       if(i+1 < argc) {
         config.ws_latitude = std::stod((argv[i+1]));
       } else {
-         debugmsg("Error : No Latitude file!");
+         debugmsg("Error : No Latitude!");
          return 0;
       }
     }
@@ -268,7 +268,7 @@ int main(int argc, char** argv) {
       if(i+1 < argc) {
         config.ws_longitude = std::stod((argv[i+1]));
       } else {
-         debugmsg("Error : No Longitude file!");
+         debugmsg("Error : No Longitude!");
          return 0;
       }
     }
