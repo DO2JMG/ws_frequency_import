@@ -10,16 +10,15 @@ Vor ab muss das folgende Paket installiert werden :
 
 <b>Kopieren und Compilieren</b>
 
-<code>
-git clone https://github.com/DO2JMG/ws_frequency_import.git
-cd ws_frequency_import
-make
-
-cp fqimport /home/pi/ws/bin/
-cp dxlfqimport.sh /home/pi/ws/
-cp ws-import.conf /home/pi/ws/
-
-sudo chmod +x /home/pi/ws/dxlfqimport.sh
+<code>git clone https://github.com/DO2JMG/ws_frequency_import.git</code>
+<code>cd ws_frequency_import</code>
+<code>make</code>
+<br>
+<code>cp fqimport /home/pi/ws/bin/</code>
+<code>cp dxlfqimport.sh /home/pi/ws/</code>
+<code>cp ws-import.conf /home/pi/ws/</code>
+<br>
+<code>sudo chmod +x /home/pi/ws/dxlfqimport.sh</code>
 </code>
 
 <b>Cronjob einstellen</b>
@@ -28,10 +27,9 @@ sudo chmod +x /home/pi/ws/dxlfqimport.sh
 
 <b>Beispiel ws-import.conf</b>
 
-<code>
-latitude="52.1234"                          
-longitude="8.1234"
-range="300"                                     # Reichweite Kilometer (Radius)
-squelch="85"
-channelfile="/home/pi/ws/sdrcfg-rtl0.txt"
-</code>
+<code>latitude="52.1234"</code>                  
+<code>longitude="8.1234"</code>
+<code>range="300"                                     # Reichweite Kilometer (Radius)</code>
+<code>squelch="85"</code>
+<code>channelfile="/home/pi/ws/sdrcfg-rtl0.txt"</code>
+
